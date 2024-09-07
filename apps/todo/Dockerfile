@@ -1,15 +1,17 @@
-FROM docker.io/oven/bun:alpine as base
+FROM oven/bun:alpine as base
 ENV NODE_ENV="production"
 
 FROM base as build
 WORKDIR /src
+
+RUN bun add -g turbo
 
 COPY ./package.json ./bun.lockb /src/
 RUN bun install
 
 COPY . /src
 RUN bun install
-RUN bun run build
+RUN bun run turbo build --filter=todo
 
 # Final stage for app image
 FROM base as prod

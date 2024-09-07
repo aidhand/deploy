@@ -1,6 +1,7 @@
 .output
 .data
 .nuxt
+.next
 .nitro
 .cache
 dist
@@ -16,3 +17,5 @@ logs
 .DS_Store
 .fleet
 .idea
+
+Dockerfile

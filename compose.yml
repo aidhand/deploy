@@ -16,3 +16,10 @@ services:
       context: ./
       dockerfile: ./apps/todo/Dockerfile
     restart: unless-stopped
+
+
+  next:
+    build:
+      context: ./
+      dockerfile: ./apps/next/Dockerfile
+    restart: unless-stopped
