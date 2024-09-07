@@ -1,0 +1,14 @@
+services:
+  web: 
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/nginx:/etc/nginx:ro
+  todo:
+    build:
+      context: ./
+      dockerfile: ./apps/todo/Dockerfile
+    restart: unless-stopped
