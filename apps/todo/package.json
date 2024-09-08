@@ -5,13 +5,28 @@
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
+		"@nuxt/fonts": "^0.7.2",
 		"nuxt": "^3.13.0",
+		"pinia": "^2.2.2",
 		"vue": "latest",
 		"vue-router": "latest"
+	},
+	"devDependencies": {
+		"@nuxt/eslint": "^0.5.6",
+		"@pinia/nuxt": "^0.5.4",
+		"@unocss/nuxt": "^0.62.3",
+		"@unocss/reset": "^0.62.3",
+		"@vueuse/core": "^11.0.3",
+		"@vueuse/nuxt": "^11.0.3",
+		"eslint": "^9.10.0",
+		"typescript": "^5.5.4",
+		"unocss": "^0.62.3"
 	}
 }

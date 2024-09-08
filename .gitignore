@@ -7,10 +7,9 @@ node_modules
 
 # Local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+
 
 # Testing
 coverage
@@ -18,15 +17,18 @@ coverage
 # Turbo
 .turbo
 
-# Vercel
-.vercel
-
 # Build Outputs
-.next/
-out/
-build
+.output
+.data
+.nuxt
+.next
+.data
+.nitro
+.cache
 dist
-
+build
+out
+output
 
 # Debug
 npm-debug.log*
