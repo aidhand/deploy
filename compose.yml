@@ -10,6 +10,8 @@ services:
     volumes:
       - ./config/nginx:/etc/nginx:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - todo
 
   todo:
     build:
