@@ -17,4 +17,6 @@ services:
     build:
       context: ./
       dockerfile: ./apps/todo/Dockerfile
+    ports:
+      - "3000"
     restart: always
