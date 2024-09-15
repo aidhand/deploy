@@ -17,6 +17,5 @@ services:
     build:
       context: ./
       dockerfile: ./apps/todo/Dockerfile
-    ports:
-      - "3000"
+    stop_signal: SIGKILL
     restart: always
