@@ -26,4 +26,4 @@ RUN mv server.mjs server/index.mjs
 
 # Start the server by default
 EXPOSE 3000
-CMD [ "bun", "run", "server/index.mjs" ]
+ENTRYPOINT [ "/usr/local/bin/bun", "run", "server/index.mjs" ]

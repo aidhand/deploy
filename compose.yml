@@ -2,7 +2,7 @@ services:
   web:
     image: nginx:alpine
     container_name: nginx
-    restart: unless-stopped
+    restart: always
     ports:
       - "80:80"
       - "443:443/tcp"
@@ -17,4 +17,4 @@ services:
     build:
       context: ./
       dockerfile: ./apps/todo/Dockerfile
-    restart: unless-stopped
+    restart: always
