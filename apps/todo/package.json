@@ -12,7 +12,11 @@
 		"postinstall": "nuxt prepare"
 	},
 	"dependencies": {
+		"@neondatabase/serverless": "^0.10.1",
 		"@nuxt/fonts": "^0.7.2",
+		"drizzle-graphql": "^0.8.5",
+		"drizzle-orm": "^0.35.2",
+		"graphql-yoga": "^5.7.0",
 		"nuxt": "^3.13.0",
 		"pinia": "^2.2.2",
 		"vue": "latest",
@@ -25,6 +29,7 @@
 		"@unocss/reset": "^0.62.3",
 		"@vueuse/core": "^11.0.3",
 		"@vueuse/nuxt": "^11.0.3",
+		"drizzle-kit": "^0.26.2",
 		"eslint": "^9.10.0",
 		"typescript": "^5.5.4",
 		"unocss": "^0.62.3"
