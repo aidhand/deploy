@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
 
+  css: ["@unocss/reset/tailwind.css", "~/assets/css/globals.css"],
+
   eslint: {
     // options here
   },
