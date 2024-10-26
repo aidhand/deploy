@@ -1,7 +1,7 @@
 FROM oven/bun:alpine as base
 ENV NODE_ENV="production"
 
-ARG APP_NAME="todo"
+ENV APP_NAME="todo"
 ARG APP_DIR="/src/apps/${APP_NAME}"
 
 FROM base as build
