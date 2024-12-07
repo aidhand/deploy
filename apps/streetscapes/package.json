@@ -1,0 +1,27 @@
+{
+  "name": "streetscapes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 3001",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.14.1592",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/fonts": "^0.10.3",
+    "@unocss/nuxt": "^0.62.4",
+    "@unocss/reset": "^0.62.4",
+    "prisma": "^6.0.1",
+    "typescript": "^5.7.2"
+  }
+}
