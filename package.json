@@ -5,7 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,tsx,vue,json,jsonc,md}\""
+    "format": "prettier --write '**/*.{js,cjs,mjs,jsx,ts,tsx,vue,json,jsonc,md}'"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
@@ -13,7 +13,7 @@
     "typescript": "^5.7.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "packageManager": "bun@1.1.38",
   "workspaces": [

@@ -12,21 +12,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.10.3",
     "nuxt": "^3.14.1592",
-    "pinia": "^2.3.0",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.5.7",
-    "@pinia/nuxt": "^0.5.5",
+    "@nuxt/fonts": "^0.10.3",
     "@unocss/nuxt": "^0.62.4",
     "@unocss/reset": "^0.62.4",
-    "@vueuse/core": "^11.3.0",
-    "@vueuse/nuxt": "^11.3.0",
-    "eslint": "^9.16.0",
-    "typescript": "^5.7.2",
-    "unocss": "^0.62.4"
+    "typescript": "^5.7.2"
   }
 }

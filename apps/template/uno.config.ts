@@ -7,7 +7,7 @@ export default defineConfig({
 
   theme: {
     fontFamily: {
-      // sans: "Inter",
+      sans: "Inter",
     },
   },
 });
