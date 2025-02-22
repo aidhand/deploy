@@ -10,9 +10,9 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "oxlint": "^0.15.9",
-    "prettier": "^3.4.2",
-    "turbo": "^2.4.0",
+    "oxlint": "^0.15.11",
+    "prettier": "^3.5.2",
+    "turbo": "^2.4.2",
     "typescript": "^5.7.3"
   },
   "engines": {
