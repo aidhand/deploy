@@ -1,17 +1,18 @@
-import { defineConfig, presetUno, transformerDirectives } from "unocss";
+import {
+  defineConfig,
+  presetAttributify,
+  presetTypography,
+  presetUno,
+  transformerDirectives,
+} from "unocss";
 
 export default defineConfig({
+  theme: { fontFamily: { sans: "Inter" } },
+
   presets: [
-    presetUno({
-      dark: "media",
-    }),
+    presetAttributify(),
+    presetTypography(),
+    presetUno({ dark: "media" }),
   ],
-
   transformers: [transformerDirectives()],
-
-  theme: {
-    fontFamily: {
-      sans: "Inter",
-    },
-  },
 });

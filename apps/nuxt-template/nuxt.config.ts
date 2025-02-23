@@ -6,9 +6,7 @@ export default defineNuxtConfig({
 
   css: ["@unocss/reset/tailwind.css", "~/assets/css/globals.css"],
 
-  nitro: {
-    preset: "bun",
-  },
+  nitro: { preset: "bun" },
 
   modules: [
     "@nuxt/icon",
@@ -18,4 +16,6 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "nuxt-auth-utils",
   ],
+
+  extends: ["@repo/ui"],
 });

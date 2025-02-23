@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-template",
+  "name": "@repo/nuxt-template",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,12 +8,15 @@
     "lint": "eslint .",
     "fix": "eslint . --fix",
     "format": "prettier --write .",
+    "db:seed": "bun run ./drizzle/seed.ts",
+    "db:reset": "bun run ./drizzle/reset.ts",
     "generate": "nuxt generate",
     "typecheck": "nuxt typecheck",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@repo/ui": "*",
     "@neondatabase/serverless": "^0.10.4",
     "drizzle-graphql": "^0.8.5",
     "drizzle-orm": "^0.39.1",
@@ -25,10 +28,12 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.3",
     "@nuxt/image": "^1.9.0",
+    "@onu-ui/preset": "^1.1.5",
     "@unocss/nuxt": "^0.62.4",
     "@unocss/reset": "^0.62.4",
     "drizzle-kit": "^0.30.4",

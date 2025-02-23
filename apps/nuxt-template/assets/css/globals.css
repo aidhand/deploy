@@ -1,3 +1,9 @@
 html {
   @apply font-sans subpixel-antialiased;
 }
+
+body {
+  @apply min-h-screen;
+  @apply bg-zinc-50 text-zinc-950;
+  @apply dark:bg-zinc-950 dark:text-zinc-50;
+}
