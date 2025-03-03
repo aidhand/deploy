@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ title: string }>()
+const props = defineProps<{ title: string }>();
 </script>
 
 <template>
@@ -10,6 +10,6 @@ const props = defineProps<{ title: string }>()
 
 <style scoped>
 h1 {
-  @apply text-5xl font-bold tracking-tight;
+  @apply text-4xl font-bold tracking-tight;
 }
 </style>
