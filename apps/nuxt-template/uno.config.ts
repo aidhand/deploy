@@ -33,7 +33,7 @@ export default defineConfig({
     "bg-heavy": "bg-zinc-400/12",
 
     btn: "px-4 py-2 rounded hover:bg-opacity-90 active:bg-opacity-80",
-    "btn-primary": "light:bg-blue-500 dark:bg-blue-600 text-white",
+    "btn-primary": "light:bg-blue-500 dark:bg-blue-600 text-white font-medium",
     "btn-secondary": "light:bg-zinc-200 dark:bg-zinc-800",
 
     input: "p-2 border b-medium rounded light:bg-white dark:bg-black",

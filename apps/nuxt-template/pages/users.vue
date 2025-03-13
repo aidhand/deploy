@@ -22,8 +22,8 @@ const users = await useFetch("/api/users");
               v-for="user in users.data.value"
               :key="user.id"
             >
-              <td>{{ user.firstName }}</td>
-              <td>{{ user.lastName }}</td>
+              <td>{{ user.id }}</td>
+              <td>{{ user.name }}</td>
               <td>{{ user.email }}</td>
               <td>{{ user.createdAt }}</td>
             </tr>

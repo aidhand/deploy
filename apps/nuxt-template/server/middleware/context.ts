@@ -1,15 +1,14 @@
-let dbClient: typeof db;
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 // TODO: add authentication context
 declare module "h3" {
   interface H3EventContext {
-    db: typeof dbClient;
+    db: typeof prisma;
   }
 }
 
 export default eventHandler((event) => {
-  if (!dbClient) {
-    dbClient = db;
-  }
-  event.context.db = dbClient;
+  event.context.db = prisma;
 });

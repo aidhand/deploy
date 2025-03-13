@@ -11,17 +11,12 @@
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
     "fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "db:seed": "bun run ./drizzle/seed.ts",
-    "db:reset": "bun run ./drizzle/reset.ts"
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "@prisma/nuxt": "^0.3.0",
     "@repo/ui": "*",
-    "@neondatabase/serverless": "^0.10.4",
-    "drizzle-graphql": "^0.8.5",
-    "drizzle-orm": "^0.39.1",
-    "graphql": "^16.10.0",
-    "graphql-yoga": "^5.10.11",
     "nuxt": "^3.15.4",
     "nuxt-auth-utils": "0.5.11",
     "vue": "^3.5.13",
@@ -29,6 +24,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.5.0",
+    "@iconify-json/tabler": "^1.2.16",
     "@nuxt/eslint": "^0.5.7",
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/icon": "^1.10.3",
@@ -38,7 +34,9 @@
     "drizzle-kit": "^0.30.4",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.1",
+    "nuxt-headlessui": "^1.2.0",
     "prettier": "^3.5.2",
+    "prisma": "^6.4.1",
     "typescript": "^5.7.3"
   }
 }

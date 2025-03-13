@@ -4,18 +4,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   telemetry: false,
 
-  css: ["@unocss/reset/tailwind.css", "~/assets/css/globals.css"],
-
   nitro: { preset: "bun" },
 
+  extends: ["@repo/ui"],
   modules: [
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxt/eslint",
     "@nuxt/fonts",
+    "@prisma/nuxt",
     "@unocss/nuxt",
     "nuxt-auth-utils",
   ],
 
-  extends: ["@repo/ui"],
+  css: ["@unocss/reset/tailwind.css", "~/assets/css/globals.css"],
 });

@@ -1,9 +1,11 @@
 html {
   @apply font-sans subpixel-antialiased;
+  @apply text-[15px] tracking-[-0.0125em];
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  @apply min-h-screen;
+  @apply min-h-screen max-w-screen;
   @apply bg-white text-zinc-950;
   @apply dark:bg-black dark:text-zinc-50;
 }
