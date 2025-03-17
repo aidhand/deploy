@@ -18,4 +18,9 @@ export default defineNuxtConfig({
   ],
 
   css: ["@unocss/reset/tailwind.css", "~/assets/css/globals.css"],
+
+  prisma: {
+    runMigration: false,
+    skipPrompts: true,
+  },
 });
