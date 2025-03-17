@@ -1,5 +1,6 @@
 {
   "service": "app",
   "dockerComposeFile": "docker-compose.yml",
-  "forwardPorts": [5432]
+  "forwardPorts": [5432],
+  "workspaceFolder": "/workspaces"
 }
